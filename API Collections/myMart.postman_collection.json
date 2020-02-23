@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "02e73f5f-7c51-43ad-bb8a-3daad06810df",
+		"name": "myMart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createUser",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"Product11\",\n    \"created_by\": \"9999\",\n    \"email_id\": \"test@example.com\",\n    \"contact_number\": \"1234567899\",\n    \"membership\": 1,\n    \"role\": 1,\n    \"passwd_hash\": \"examplePassword\",\n    \"xc_01\": \"\",\n    \"xc_02\": \"\",\n    \"xc_03\": \"\",\n    \"xc_04\": \"\",\n    \"xc_05\": \"\",\n    \"xc_06\": \"\",\n    \"xc_07\": \"\",\n    \"xc_08\": \"\",\n    \"xc_09\": \"\",\n    \"xc_10\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/createUser",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"createUser"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
