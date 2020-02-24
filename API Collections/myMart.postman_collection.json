@@ -8,10 +8,35 @@
 		{
 			"name": "createProduct",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Product11\",\n    \"description\": \"product desc\",\n    \"available_sku\": \"100\",\n    \"cat_id_l1\": 1,\n    \"cat_id_l2\": 1,\n    \"cat_id_l3\": 1,\n    \"reward_value\": 100,\n    \"supplier_id\": 1,\n    \"deliver_cat_id\": 100,\n    \"UOM\": \"KG\",\n    \"uom_quantity\": 10,\n    \"CGST\": 1,\n    \"IGST\": 2,\n    \"SGST\": 3,\n    \"max_purchase_unit\": 10,\n    \"status\": 1,\n    \"img_src\": \"abc\",\n    \"start_date\": \"2019-01-01T00:00:00.000Z\",\n    \"end_date\": \"2019-01-01T00:00:00.000Z\",\n    \"xc_01\": \"\",\n    \"xc_02\": \"\",\n    \"xc_03\": \"\",\n    \"xc_04\": \"\",\n    \"xc_05\": \"\",\n    \"xc_06\": \"\",\n    \"xc_07\": \"\",\n    \"xc_08\": \"\",\n    \"xc_09\": \"\",\n    \"xc_10\": \"\",\n    \"productPricing\":{\n \n    \t\"base_price\":100,\n    \t\"sale_price\":1000,\n    \t\"member_price\":200,\n    \t\"start_date\":\"2019-01-01T00:00:00.000Z\",\n    \t\"end_date\":\"2019-01-01T00:00:00.000Z\",\n    \t\"created_by\":999,\n    \t\"status\":1,\n    \t\"description\": \"Sample Produt Pricing Description\",\n    \t\"xc_01\": \"\",\n    \"xc_02\": \"\",\n    \"xc_03\": \"\",\n    \"xc_04\": \"\",\n    \"xc_05\": \"\",\n    \"xc_06\": \"\",\n    \"xc_07\": \"\",\n    \"xc_08\": \"\",\n    \"xc_09\": \"\",\n    \"xc_10\": \"\"\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": ""
+					"raw": "http://localhost:5000/api/createProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"createProduct"
+					]
 				}
 			},
 			"response": []
