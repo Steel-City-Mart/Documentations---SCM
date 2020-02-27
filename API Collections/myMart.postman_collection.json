@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "02e73f5f-7c51-43ad-bb8a-3daad06810df",
+		"_postman_id": "fe3bd03c-dcf0-42e3-badf-64556c4ff260",
 		"name": "myMart",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -113,6 +113,125 @@
 						"api",
 						"login"
 					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserbyId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/addLocation/1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"1\",\n    \"add_l1\": \"address l1\",\n    \"add_l2\": \"address l2\",\n    \"add_l3\": \"address l3\",\n    \"pincode\": \"560036\",\n    \"gps_value\": \"samplegps\",\n    \"delivery_contact\": \"1234567890\",\n    \"status\":1,\n    \"xc_01\": \"\",\n    \"xc_02\": \"\",\n    \"xc_03\": \"\",\n    \"xc_04\": \"\",\n    \"xc_05\": \"\",\n    \"xc_06\": \"\",\n    \"xc_07\": \"\",\n    \"xc_08\": \"\",\n    \"xc_09\": \"\",\n    \"xc_10\": \"\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/addLocation",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"addLocation"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/getUserDetails/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/getUserDetails/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"getUserDetails",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"description": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email_id\":\"dibyabhoidibya@gmail.com\",\n\"passwd_hash\":\"dibyarab\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
 				}
 			},
 			"response": []
